@@ -1,0 +1,1 @@
+ln -o zapal.com zmain.o zmenu.o zburn.o zcalib.o zdisk.o zmisc.o zdevice.o m.lib c.lib 
