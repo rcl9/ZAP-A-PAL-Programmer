@@ -1,6 +1,6 @@
 # **ZAP-A-PAL** Programmer - A Variation on a 1987-era PAL Programmer
 
-ZAP-A-PAL was a low cost 20-pin and 24-pin PAL programmer developed by Robert A. Freedman and published in the [January 1987 issue](/Docs/ZAP-A-PAL - January 1987 BYTE Magazine.pdf) of BYTE Magazine. It accepts JEDEC files which define the fuse map. It only programs bipolar PALs and not security fuses nor CMOS programmable logic devices. It does not support AMD PALs which used a different programming method. A good overview of PALs and the methods by which the fuses are burned is contained in the BYTE magazine issue.
+ZAP-A-PAL was a low cost 20-pin and 24-pin PAL programmer developed by Robert A. Freedman and published in the [January 1987 issue](</Docs/ZAP-A-PAL - January 1987 BYTE Magazine.pdf>) of BYTE Magazine. It accepts JEDEC files which define the fuse map. It only programs bipolar PALs and not security fuses nor CMOS programmable logic devices. It does not support AMD PALs which used a different programming method. A good overview of PALs and the methods by which the fuses are burned is contained in the BYTE magazine issue.
 
 This repository documents a variation made of the design by RCL9 in May 1987. Robert Freedman's version was based on an IBM PC card which he sold upon request. RCL9 designed a version which would run on his Z80-based machines connected to his  **Universal I/O Port** documented at the [bottom of this page](https://github.com/rcl9/Cypher-Z80-68000-Single-Board-Computer----Expansion-Board).
 
