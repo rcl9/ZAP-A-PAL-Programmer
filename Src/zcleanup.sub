@@ -1,0 +1,6 @@
+era zmain.asm
+era zmenu.asm
+era zburn.asm
+era zcalib.asm
+era zdisk.asm
+era zmisc.asm

@@ -1,0 +1,22 @@
+     This version of ZAP-A-PAL is set up to take JEDEC files for PALs which use the
+whole fuse array, like 16L8 etc. Sparse array PALs like the 10L8, 14H4, etc. can
+be programmed, but you have to edit the JEDEC fuse file to put in the phantom
+fuses that most logic compilers leave out in a misguided attempt at efficiency.
+
+To see what the JEDEC file should look like, put a blank sparse PAL into the
+socket and (R)ead it into the buffer. Then look at the fuse array with (Y).
+The phantom fuses appear as blown. Those columns should be edited into the
+JEDEC file produced by the Logic compiler before being loaded into ZAPAL.
+
+You then have to correct the fuze numbers in the JEDEC file to conform to the
+full fuse array after editing. Phantom rows are normally supplied by ZAPAL.
+The diagrams for sparse array PALs in the PAL Handbook show this clearly.
+Don't worry that editing the JEDEC file will blow the checksum. ZAP-A-PAL doesn't
+bother to verify the checksum in the JEDEC file anyway. Later versions of ZAP-A-PAL 
+will tweek the fusemap for sparse PALs for you, but hey, I had to leave
+something to challenge the hobbiest. It'd be no fun if I did everything for you.
+Besides, if you stick with 16L8, 16R4-6-8, 20L8, etc. like I do, ZAP-A-PAL works OK.
+
+Another thing to watch is that your logic compiler produces the proper polarity
+for true output PALs like 14H4 or 10H8. You may have to invert the sense of the
+fuse in this program if it is incorrect. 
